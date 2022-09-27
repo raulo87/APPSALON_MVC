@@ -30,8 +30,8 @@ class Router
         //RewriteCond %{REQUEST_FILENAME} !-f
         //RewriteRule ^ index.php [QSA,L] 
         // usar $_SERVER['REDIRECT_URL'];
-        //$currentUrl = $_SERVER['REDIRECT_URL'] ?? '/';        
-        $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+        $currentUrl = $_SERVER['REDIRECT_URL'] ?? '/';        
+        //$currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
         $method = $_SERVER['REQUEST_METHOD'];
 
         //RewriteCond %{REQUEST_FILENAME} !-f
